@@ -73,5 +73,5 @@ class Streamable:
 if __name__ == '__main__':
 
     streamable = Streamable()
-    streamable.upload(file='video.mp4', title='Test upload')
-    # streamable.import_vid(url='https://www.youtube.com/watch?v=YKJwEmBPWOY', title='Test import')
+    streamable.upload(file='', title='Test upload')
+    # streamable.import_vid(url='', title='Test import')
