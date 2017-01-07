@@ -4,7 +4,7 @@ A wrapper for the Streamable API
 ## Requirements
 1. Python 3.6
 2. Requests module  
-```pip3 install requests```
+`pip3 install requests`
 
 ## Authentication
 
@@ -16,29 +16,32 @@ PASS = ''
 ## Usage
 
 ### Create an instance
-```s = Streamable()```  
+`s = Streamable()`
 
 ### Upload a video
-```s.upload(file='', title='')```  
+`s.upload(file='', title='')`  
+
 :params:  
-```file``` = the local video file  
-```title``` = optional title for the video  
+`file` = the local video file  
+`title` = optional title for the video  
 
 ### Upload a video via import  
-```s.import_vid(url='', title='')```  
+`s.import_vid(url='', title='')`  
+
 :params:  
-```url``` = location of video (youtube link, webm, etc)  
-```title``` = optional title for the video  
+`url` = location of video (youtube link, webm, etc)  
+`title` = optional title for the video  
 
 ### Retrieve user
-```s.get_user(user='')```  
-:params:  
-```user``` = user to retrieve
+`s.get_user(user='')`  
 
-### Retrieve self
-```s.get_me()```  
+:params:  
+user = user to retrieve  
+
+### Retrieve yourself
+`s.get_me()`  
+
 (Requires authentication)  
-Returns a User object representing the currently authenticated user
 
 ## More Reading  
 https://streamable.com/documentation
